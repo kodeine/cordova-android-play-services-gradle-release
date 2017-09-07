@@ -3,12 +3,12 @@ configurations.all {
         def requested = details.requested
         if (requested.group == 'com.google.android.gms') {
             if (!requested.name.startsWith("multidex")) {
-                details.useVersion '10.+'
+                details.useVersion '11.0.+'
             }
         }
         if (requested.group == 'com.android.support') {
             if (!requested.name.startsWith("multidex")) {
-                details.useVersion '25.3.0'
+                details.useVersion '25.4.0'
             }
         }
     }
